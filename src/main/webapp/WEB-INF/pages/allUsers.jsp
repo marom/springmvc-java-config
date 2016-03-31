@@ -70,7 +70,9 @@
                     <td><c:out value="${user.id}"/></td>
                     <td><c:out value="${user.username}"/></td>
                     <td><c:out value="${user.password}"/></td>
-                    <td><c:out value="${user.enabled}"/></td>
+                    <td>
+                        <span class="icon-check"></span>
+                        <c:out value="${user.enabled}"/></td>
                 </tr>
             </c:forEach>
         </table>
