@@ -36,13 +36,13 @@ public class DatabaseController {
 			
 	}
 
-	@RequestMapping(value = "/displayAllUsers")
-	public ModelAndView displayAllUsers() {
-
-		jdbcTemplate = new JdbcTemplate(dataSource);
-		List<Map<String, Object>> users = jdbcTemplate.queryForList("SELECT * FROM USER");
-
-		return new ModelAndView("allUsers","users", users);
-	}
+//	@RequestMapping(value = "/displayAllUsers")
+//	public ModelAndView displayAllUsers() {
+//
+//		jdbcTemplate = new JdbcTemplate(dataSource);
+//		List<Map<String, Object>> users = jdbcTemplate.queryForList("SELECT * FROM USER");
+//
+//		return new ModelAndView("allUsers","users", users);
+//	}
 	
 }
