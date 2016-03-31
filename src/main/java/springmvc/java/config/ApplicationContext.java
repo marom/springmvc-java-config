@@ -57,10 +57,10 @@ public class ApplicationContext {
 	}
 	
 	@Bean
-	public BlogPostService blogPostService () {		
-		return new BlogPostServiceImpl();		
+	public BlogPostService blogPostService () {
+		return new BlogPostServiceImpl();
 	}
-	
+
 	
 	@Bean
 	@Qualifier("embedded")

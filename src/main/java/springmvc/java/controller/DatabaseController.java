@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class DatabaseController {
@@ -32,6 +34,15 @@ public class DatabaseController {
 			LOGGER.debug("MySQL username: " + user.get("username"));			
 		}
 			
-	}	
+	}
+
+	@RequestMapping(value = "/displayAllUsers")
+	public ModelAndView displayAllUsers() {
+
+		jdbcTemplate = new JdbcTemplate(dataSource);
+		List<Map<String, Object>> users = jdbcTemplate.queryForList("SELECT * FROM USER");
+
+		return new ModelAndView("allUsers","users", users);
+	}
 	
 }

@@ -2,6 +2,7 @@ package springmvc.java.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
 import springmvc.java.domain.BlogPost;
 import springmvc.java.domain.User;
 

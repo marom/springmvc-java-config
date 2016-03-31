@@ -41,10 +41,7 @@ public class BlogPostController {
 	public ModelAndView saveBlogPost(
 			@RequestParam(value="title") String title,
 			@RequestParam(value="content") String content,
-			@RequestParam(value="draft",required=false) boolean draft, Locale locale
-			,Principal principal
-
-			) {
+			@RequestParam(value="draft",required=false) boolean draft, Locale locale, Principal principal) {
 		
 		BlogPost blogPost = new BlogPost();
 		blogPost.setTitle(title);

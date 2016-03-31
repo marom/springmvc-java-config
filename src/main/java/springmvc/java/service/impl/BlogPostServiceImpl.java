@@ -7,11 +7,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.springframework.stereotype.Service;
 import springmvc.java.dao.BlogPostDAO;
 import springmvc.java.domain.BlogPost;
 import springmvc.java.domain.User;
 import springmvc.java.service.BlogPostService;
-
 
 public class BlogPostServiceImpl implements BlogPostService {
 

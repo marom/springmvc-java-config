@@ -49,7 +49,7 @@
 	
 	<br/>
 	
-	<a href="${pageContext.request.contextPath}/displayUsersMySQL">Display users with MySQL Database</a>
+	<a href="${pageContext.request.contextPath}/displayAllUsers">Display users with H2 Database</a>
 		
 	<br/>
 	
